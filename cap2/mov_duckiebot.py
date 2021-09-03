@@ -42,7 +42,7 @@ else:
 # Se reinicia el environment
 env.reset()
 
-
+####
 while True:
 
     # Captura la tecla que está siendo apretada y almacena su valor en key
