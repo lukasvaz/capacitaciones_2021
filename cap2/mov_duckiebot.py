@@ -61,11 +61,24 @@ while True:
 
     # Esto es avanzar recto hacia adelante al apretar la tecla w
     if key == ord('w'):
-        action = np.array([0.44, 0.0])
+        action = np.array([0.34, 0.0])
 
     ### AGREGAR MÁS COMPORTAMIENTOS ###
+    if key == ord('d'):
+        action= np.array([0.14,-0.44])
+    if key == ord('a'):
+        action = np.array([0.14,0.44])
+    if key == ord('s'):
+        action = np.array([-0.14,0])
+    ###aumentar velocidades
+    if key == ord('j'):
+        action=np.array([0.8,0.0])
+    ##spin (girar en su propio eje))
+    if key == ord('l'):
+        action=np.array([0,-3.0])
 
-
+    if key == ord('k'):
+        action=np.array([0,+3.0])
 
     # Se ejecuta la acción definida anteriormente y se retorna la observación (obs),
     # la evaluación (reward), etc
