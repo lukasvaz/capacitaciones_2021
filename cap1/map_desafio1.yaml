@@ -1,0 +1,140 @@
+tiles:
+   # 0             1               2         3                 4          5              6
+- [floor   , floor         , floor     , floor         , floor     , floor        , floor   ] #0
+- [floor    , curve_left/W , straight/W, 3way_left/W   , straight/W, curve_left/N   ,  floor ] #1
+- [floor    , straight/S    , grass   ,  straight/N    , grass  , straight/N  ,  floor    ] #2
+- [floor    , straight/S   , grass     , straight/N   , grass  ,    straight/N   , floor   ] #3
+- [floor    ,  3way_left/S  , straight/E, 3way_left/E  , straight/E, 3way_left/N   ,  floor  ] #4
+- [floor    ,  straight/S   ,  grass   ,  grass   ,        grass   ,   straight/N,     floor ] #5
+- [floor    , 3way_left/S ,straight/E  ,  3way_left/W ,straight/E ,3way_left/N  ,  floor   ]   #6
+- [floor    , straight/S    , grass     , straight/N    ,  water   , straight/N    ,  floor   ] #7
+- [floor    , straight/S   , grass       , straight/N   ,  water   ,   straight/N    , floor  ] #8
+- [floor    , curve_left/S  , straight/E, 3way_left/E   , straight/E, curve_left/E   ,  floor] #9
+- [floor    , floor         , floor     , floor         , floor     , floor       , floor    ] #10
+
+
+
+
+objects:
+
+#casa
+- kind: house
+  pos: [2.6, 2.8]
+  rotate: 0
+  height: 0.4
+  optional: true
+#arboles pasto
+- kind: tree
+  pos: [2.6, 7.25]
+  rotate: 0
+  height: 0.13
+  optional: true
+- kind: tree
+  pos: [2.5, 7.55]
+  rotate: 0
+  height: 0.18
+  optional: true
+- kind: tree
+  pos: [2.4, 7.65]
+  rotate: 0
+  height: 0.168
+  optional: true
+#arboles exterior
+- kind: tree
+  pos: [0.6, 3.25]
+  rotate: 0
+  height: 0.13
+  optional: true
+- kind: tree
+  pos: [0.5, 3.55]
+  rotate: 0
+  height: 0.18
+  optional: true
+- kind: tree
+  pos: [0.4, 3.65]
+  rotate: 0
+  height: 0.168
+  optional: true
+- kind: tree
+  pos: [6.6, 3.25]
+  rotate: 0
+  height: 0.13
+  optional: true
+- kind: tree
+  pos: [6.5, 3.55]
+  rotate: 0
+  height: 0.18
+  optional: true
+- kind: tree
+  pos: [6.4, 3.65]
+  rotate: 0
+  height: 0.168
+  optional: true
+#patos superior izq
+- kind: duckie
+  pos: [0.9, 1.55]
+  rotate: 0
+  height: 0.08
+  optional: true
+- kind: duckie
+  pos: [0.9, 1.7]
+  rotate: 0
+  height: 0.12
+  optional: true
+- kind: duckie
+  pos: [0.9, 1.85]
+  rotate: 0
+  height: 0.06
+  optional: true
+#patos inf-der
+- kind: duckie
+  pos: [4.53, 7.45]
+  rotate: 90
+  height: 0.06
+  optional: true
+
+- kind: duckie
+  pos: [4.53, 7.6]
+  rotate: 90
+  height: 0.02
+  optional: true
+- kind: duckie
+  pos: [4.53, 7.7]
+  rotate: 90
+  height: 0.02
+  optional: true
+- kind: duckie
+  pos: [4.53, 7.8]
+  rotate: 90
+  height: 0.02
+  optional: true
+#patos centrales
+- kind: duckie
+  pos: [4.3, 5.5]
+  rotate: 180
+  height: 0.3
+  optional: true
+- kind: duckie
+  pos: [3.7, 5.5]
+  rotate: 0
+  height: 0.3
+  optional: true
+# patos superoior derecho
+- kind: duckie
+  pos: [4.45, 3]
+  rotate: 135
+  height: 0.06
+  optional: true
+- kind: duckie
+  pos: [4.55, 3]
+  rotate: 45
+  height: 0.06
+  optional: true
+- kind: duckie
+  pos: [4.5, 3.2]
+  rotate: -90
+  height: 0.06
+  optional: true
+
+
+tile_size: 0.585
