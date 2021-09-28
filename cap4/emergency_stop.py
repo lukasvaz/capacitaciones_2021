@@ -115,13 +115,15 @@ if __name__ == '__main__':
     # Constante que se debe calcular
     
     #mediciones
+    #a continuación las mediciones tomadas para p y dr
     lista_p=np.array([55, 58, 60, 60, 63, 66, 70, 73, 77, 77, 81, 87, 94, 100, 109, 117, 129, 143, 160, 181, 210])
     lista_dr=np.array([1.0436371367866557, 1.003751241240131, 0.9638748027114095, 0.9638748027114095, 0.9238984224387755, 0.8839241792528123, 0.8439523768262387, 0.8039833792023049, 0.7640176265744507, 0.7640176265744507, 0.7240179873495745, 0.6840183903192955, 0.6440188433456523, 0.6040193563732403, 0.564019942167664, 0.524020617392185, 0.4840214042182003, 0.44402233280616654, 0.40402344526017525, 0.36402480218959465, 0.3240264941304109])
-    #calculando f
+    
+    #calculando f a partir de las mediciones
     lista_f=(lista_p*lista_dr)/0.08
     f= lista_f.mean() # f=755.7431330677339 px
 
-    #C = f * dr (f es constante, dr es conocido)
+   
     while True:
 
 
@@ -174,7 +176,7 @@ if __name__ == '__main__':
             print('da',d_aprox)
             
             
-            # Si la distancia es muy pequeña activa alerta
+            # Si la distancia es muy pequeña activa alerta (activa pantalla roja antes de detener el bot)
             if d_aprox < 0.6:
                 # Muestra ventana en rojo
                 obs=red_alert(obs)
